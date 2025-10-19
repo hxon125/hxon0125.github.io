@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <style>
+        html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+        .navbar {
+    background: #08401c;
+    display: flex;
+    align-items: center;
+    height: 90px;  /* 기존 90px에서 150px으로 증가 */
+    /* 나머지 스타일 그대로 유지 */
+    padding: 0 20px;
+}
+
+.logo {
+    width: 160px;  /* 실제 로고 크기에 맞게 조정 */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-top: 10px;
+    background: none;
+    border-radius: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu-item {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+.menu-item:hover {
+    color: #b5ffad;
+}
+.menu-item.active {
+    color: #b5ffad;  /* 활성 메뉴 색상 */
+}
+.program-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4열로 */
+  gap: 16px; /* 카드 간격 */
+  padding: 30px 0 0 0;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.program-item {
+  background: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 18px;
+}
+
+.program-item img {
+  width: 100%;
+  aspect-ratio: 1/1.3; /* 정사각형, 비율 고정 */
+  height: 500px;       
+  max-width: 400px;        /* 최대 너비를 더 크게 */
+  max-height: none;        /* 제한 해제 */
+}
+
+.desc-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* 세로 중앙 */
+  align-items: center;       /* 가로 중앙 */
+  min-height: 220px;         /* 안내글 박스 높이 고정 (예시값, 실제 카드 디자인 따라 조정) */
+}
+.program-desc {
+  margin-top: 14px;
+  font-size: 1.07rem;
+  color: #184523;
+  text-align: center;
+  min-height: 48px; /* 설명 높이 맞추는 용도. 필요시 조정 */
+  padding: 0 10px;
+}
+.program-title {
+  text-align: center;
+  font-size: 2rem;         /* 제목 크기 예쁘게 */
+  font-weight: 700;
+  color: #134c2f;
+  margin: 35px 0 12px 0;   /* 위아래 여백 조절 */
+}
+.site-footer {
+  width: 100%;
+  background: gray;
+  color: #fff;
+  text-align: center;
+  padding: 22px 0 18px 0;
+  font-size: 1.04rem;
+  margin-top: 48px;
+  letter-spacing: 0.2px;
+}
+
+.site-footer a {
+  color: #b5ffad;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+    </style>
+   <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <a href="index.html">
+        <img src="img/설악산 로고.png" width="100" alt="설악산 로고"></a>
+    </div>
+    <nav class="menu">
+        <a href="갤러리.html" class="menu-item">갤러리</a>
+        <a href="탐방로.html" class="menu-item">탐방로</a>
+        <a href="동식물.html" class="menu-item">동식물</a>
+        <a href="프로그램.html" class="menu-item active">프로그램</a>
+        <a href="캠핑.html" class="menu-item">캠핑</a>
+    </nav>
+</header>
+<h3 class="program-title">설악산 탐방을 즐겨보자</h3>
+<div class="program-list">
+</div>
+<div class="program-list">
+  <div class="program-item">
+    <img src="img/프로그램1.png" alt="프로그램1">
+    <div class="desc-wrapper">
+    <div class="program-desc">탐방안내소 내부에서 대형 미디어아트와 드론과<br> 프로젝션 맵핑 기술을 결합해 설악산의 자연경관, 지형, 생태를 입체적이고
+         예술적으로 체험하는 몰입형 전시입니다. 또한 챗GPT 기반 안내부스가 다국어로 탐방객에게 정보를 제공하며, 
+         생태교육과 사진전 등 다양한 문화예술 콘텐츠를 제공합니다. </div>
+  </div>
+  </div>
+  <div class="program-item">
+    <img src="img/프로그램2.png" alt="프로그램2">
+    <div class="desc-wrapper">
+    <div class="program-desc">국립공원공단 예약시스템에서 탐방로예약제 예약 후 예약한 날짜에 곰배골 탐방하러 도착합니다.
+         탐방로를 가면서 5개 지점에서 QR코드 스캔 후 영상을 보고 퀴즈를 맞추면 간식을 제공합니다. 이 후에는 추첨을 통해 소정의 상품을 드립니다.</div>
+  </div>
+  </div>
+  <div class="program-item">
+    <img src="img/프로그램3.png" alt="프로그램3">
+    <div class="desc-wrapper">
+    <div class="program-desc"> 한국산악사진가협회에서 주최하는 <2025 K-mountain 한국의 산 사진전>이 설악산국립공원<br> 탐방안내소에서 열립니다.
+        액자 속 전국 명산의 아름다움을 눈에 담고, 설악의 가을 풍경도 함께 경험할 수 있습니다.
+    </div>
+  </div>
+  </div>
+  <div class="program-item">
+    <img src="img/프로그램4.png" alt="프로그램4">
+    <div class="desc-wrapper">
+    <div class="program-desc">설악산국립공원 산악안전교육원에서 제공하는 빙벽 체험 프로그램은 겨울철 얼음으로 된 암벽을 등반하는 체험 활동으로, 
+        전문 강사의 안전 교육과 장비<br> 지원을 받아 체험할 수 있습니다. 이 프로그램은<Br> 설악산 겨울 산행의 매력을 안전하게 경험할 수 있도록 마련되었으며, 
+        특히 겨울 스포츠 및 등산 초보자들에게 매우 유익한 체험으로 인기가 높습니다.
+
+</div>
+</div>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="footer-content">
+    <span>ⓒ 2025 설악산 국립공원 탐방 안내 웹페이지 | 정보 및 사진 자료 출처: 국립공원관리공단 공식 홈페이지</span>
+    <br>
+  </div>
+</footer>
+
+</body>
+</html>

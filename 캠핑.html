@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <style>
+        html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+        .navbar {
+    background: #08401c;
+    display: flex;
+    align-items: center;
+    height: 90px;  /* 기존 90px에서 150px으로 증가 */
+    /* 나머지 스타일 그대로 유지 */
+    padding: 0 20px;
+}
+
+.logo {
+    width: 160px;  /* 실제 로고 크기에 맞게 조정 */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-top: 10px;
+    background: none;
+    border-radius: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu-item {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+.menu-item:hover {
+    color: #b5ffad;
+}
+.menu-item.active {
+    color: #b5ffad;  /* 활성 메뉴 색상 */
+}
+.camp-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* 중앙 정렬 */
+  max-width: 1100px;
+  margin: 48px auto;
+}
+
+.camp-map img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.10);
+  border-radius: 8px;
+  display: block;
+}
+
+.camp-desc {
+  width: 95%;
+  max-width: 1100px;
+  font-size: 1.14rem;
+  color: #234d2e;
+  background: #f9f9f6;
+  padding: 28px 28px 22px 28px;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+
+.camp-desc h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.camp-desc ul {
+  margin: 0 0 18px 0;
+  padding-left: 24px;
+}
+
+.camp-desc li {
+  margin-bottom: 10px;
+}
+.camp-table {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  border-collapse: collapse;
+  font-size: 1.07rem;
+  background: #fff;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.06);
+}
+
+.camp-table th, .camp-table td {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 14px 18px;
+  text-align: left;
+}
+
+.camp-table thead th {
+  color: #1b4b27;
+  background: #f6faf7;
+  font-weight: 700;
+}
+.camp-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.site-footer {
+  width: 100%;
+  background: gray;
+  color: #fff;
+  text-align: center;
+  padding: 22px 0 18px 0;
+  font-size: 1.04rem;
+  margin-top: 48px;
+  letter-spacing: 0.2px;
+}
+
+.site-footer a {
+  color: #b5ffad;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+    </style>
+   <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <a href="index.html">
+        <img src="img/설악산 로고.png" width="100" alt="설악산 로고"></a>
+    </div>
+    <nav class="menu">
+        <a href="갤러리.html" class="menu-item">갤러리</a>
+        <a href="탐방로.html" class="menu-item">탐방로</a>
+        <a href="동식물.html" class="menu-item">동식물</a>
+        <a href="프로그램.html" class="menu-item">프로그램</a>
+        <a href="캠핑.html" class="menu-item active">캠핑</a>
+    </nav>
+</header>
+<div class="camp-layout">
+  <div class="camp-map">
+    <img src="img/야영장 안내도.jpg" alt="야영장 배치도">
+  </div>
+  <div class="camp-desc">
+    <h3>야영장 이용 안내</h3>
+    <ul>
+      <li>주소: 강원도 속초시 청봉로 25</li>
+      <li>문의처: 033-801-0903</li>
+      <li>입/퇴실 시간: A, B, E 영지(자동차야영지)<br> C 영지(캠핑용자동차전용야영지): 오후2시~익일 오전12시(정오)
+        <br>카라반(1~16): 오후 3시~익일 오전 11시</li>
+      <li>성수기 : 매해 7.1 ~ 8.31, 10.1 ~ 11.15</li>
+      <li>주중 : 법정공휴일의 전일을 제외한 매주 일요일 ~ 목요일</li>
+      <li>주말 : 매주 금요일, 토요일, 법정공휴일의 전일</li>
+      <li>전기는 A,C,E 영지만 가능합니다</li>
+      <li>편의 시설: 코인 샤워장, 취사장, 화장실, 전기(최대 600w), 전기차 충전소, 어린이 놀이시설</li>
+    </ul>
+    <p>기타 문의사항은 홈페이지 또는 사무소 전화로 연락해 주세요.</p>
+  </div>
+</div>
+<table class="camp-table">
+  <thead>
+    <tr>
+      <th>이용금액</th>
+      <th>구분</th>
+      <th>주말 및 성수기</th>
+      <th>주중</th>
+      <th>비고</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>자동차야영지</td>
+      <td>19,000원</td>
+      <td>15,000원</td>
+      <td>전기(전기사용료 별도, A, E영지만 가능)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>캠핑용자동차전용야영지</td>
+      <td>33,000원</td>
+      <td>26,000원</td>
+      <td>전기(전기사용료 포함, C영지)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>카라반(4인용)</td>
+      <td>80,000원</td>
+      <td>60,000원</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<footer class="site-footer">
+  <div class="footer-content">
+    <span>ⓒ 2025 설악산 국립공원 탐방 안내 웹페이지 | 정보 및 사진 자료 출처: 국립공원관리공단 공식 홈페이지</span>
+    <br>
+  </div>
+</footer>
+</body>
+</html>

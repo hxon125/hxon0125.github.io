@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <style>
+        html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+        .navbar {
+    background: #08401c;
+    display: flex;
+    align-items: center;
+    height: 90px;  /* 기존 90px에서 150px으로 증가 */
+    /* 나머지 스타일 그대로 유지 */
+    padding: 0 20px;
+}
+
+.logo {
+    width: 160px;  /* 실제 로고 크기에 맞게 조정 */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-top: 10px;
+    background: none;
+    border-radius: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu-item {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+.menu-item:hover {
+    color: #b5ffad;
+}
+.menu-item.active {
+    color: #b5ffad;  /* 활성 메뉴 색상 */
+}
+.plant-list {
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+.plant-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.plant-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; /* 동그란 사진 */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+  border: 2px solid #e0e0e0;
+  display: block;
+}
+
+.plant-desc h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #174e2c;
+}
+.plant-desc p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+}
+.site-footer {
+  width: 100%;
+  background: gray;
+  color: #fff;
+  text-align: center;
+  padding: 22px 0 18px 0;
+  font-size: 1.04rem;
+  margin-top: 48px;
+  letter-spacing: 0.2px;
+}
+
+.site-footer a {
+  color: #b5ffad;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <a href="index.html">
+        <img src="img/설악산 로고.png" width="100" alt="설악산 로고"></a>
+    </div>
+    <nav class="menu">
+        <a href="갤러리.html" class="menu-item">갤러리</a>
+        <a href="탐방로.html" class="menu-item">탐방로</a>
+        <a href="동식물.html" class="menu-item active">동식물</a>
+        <a href="프로그램.html" class="menu-item">프로그램</a>
+        <a href="캠핑.html" class="menu-item">캠핑</a>
+    </nav>
+</header>
+<div class="plant-list">
+  <div class="plant-row">
+    <div class="plant-img">
+      <img src="img/동식물1.jpg" alt="동식물1">
+    </div>
+    <div class="plant-desc">
+      <h3>초롱꽃</h3>
+      <p>초롱꽃은 초롱꽃과에 속하는 여러해살이풀로, 우리나라 토종 식물 입니다. 높이는 30~100cm 정도이며,
+        종모양의 꽃이 6~8월에 아래를 향해 피는 것이 특징이며 주로 연한 자주색 또는 흰색, 전체에 거친 털이 있습니다.
+      </p>
+    </div>
+  </div>
+  <div class="plant-row">
+    <div class="plant-img">
+      <img src="img/동식물2.jpg" alt="동식물2">
+    </div>
+    <div class="plant-desc">
+      <h3>복수초</h3>
+      <p>복수초는 이른 봄, 눈이 녹기 전부터 피어나 '봄의 전령사' 또는 '설련화'라고도 불리며, 노란색 꽃이 특징입니다.
+        미나리아재비과의 여러해살이풀로, 잎보다 꽃이 먼저 나오고 해가 떠 있을 땐 꽃잎이 활짝, 밤/흐린 날엔 오므라드는 성질이 있습니다.
+      </p>
+    </div>
+  </div>
+  <div class="plant-row">
+    <div class="plant-img">
+      <img src="img/동식물3.jpg" alt="동식물3">
+    </div>
+    <div class="plant-desc">
+      <h3>송이풀</h3>
+      <p>송이풀은 엽록소가 없고, 잎이 퇴화하여 주로 연한 분홍빛 또는 황갈색의 줄기와 송이처럼 모여 핀 꽃이 특징인 기생식물입니다.<br>
+        전국 산지의 깊은 숲, 특히 소나무가 많은 곳에서 잘 자라며, 다른 식물의 뿌리에서 양분을 얻어 살아갑니다.
+      </p>
+    </div>
+  </div>
+  <div class="plant-row">
+    <div class="plant-img">
+      <img src="img/동식물4.jpg" alt="동식물4">
+    </div>
+    <div class="plant-desc">
+      <h3>산양</h3>
+      <p>설악산의 깃대종 산양은 멸종위기 야생동물 1급이자 천연기념물로 지정되어 있는 한국 고유의 포유류입니다. 
+        바위와 나무가 많은 험한 산지에서 2~5마리씩 무리 생활하며, 주로 아침이나 저녁에 활동하고 잔가지, 초목, 이끼, 진달래 등 산의 식물을 먹습니다. 
+        <br>설악산에는 100~200여 마리가 서식하는 것으로 추정되며, 주요 서식지는 바위와 동굴 사이입니다.
+      </p>
+    </div>
+  </div>
+  <div class="plant-row">
+    <div class="plant-img">
+      <img src="img/동식물5.jpg" alt="동식물5">
+    </div>
+    <div class="plant-desc">
+      <h3>다람쥐</h3>
+      <p>설악산의 다람쥐는 잣나무 숲이나 혼효림에서 흔히 볼 수 있는 작은 포유류로, 낮에는 주로 나무 구멍이나 굴에서 휴식하다가 아침과 저녁에 활동합니다. 
+        나무 사이를 빠르게 뛰어다니며, 먹이를 저장하는 습성이 있어 겨울에는 저장한 음식에 의존해 생활합니다.
+      </p>
+    </div>
+  </div>
+  <div class="plant-row">
+    <div class="plant-img">
+      <img src="img/동식물6.jpg" alt="동식물6">
+    </div>
+    <div class="plant-desc">
+      <h3>노루</h3>
+      <p>노루는 주로 새벽에 활동하며, 부드럽고 수분이 많은 풀, 나무의 줄기와 잎, 도토리 등을 먹습니다. 
+        겨울철에는 눈을 헤치고 먹이를 찾아내는 능력이 뛰어나며, 주로 음지에서 서식하는데 이는 털에 기생하는 벌레의 활동을 피하기 위한 전략입니다.
+      </p>
+    </div>
+  </div>
+  <div class="plant-row">
+    <div class="plant-img">
+      <img src="img/동식물7.jpg" alt="동식물7">
+    </div>
+    <div class="plant-desc">
+      <h3>삵</h3>
+      <p>삵은 야행성의 포식자로 토끼, 설치류, 새, 곤충 등을 사냥하며 밤에 활동이 많습니다.
+        몸집은 고양이와 비슷하거나 조금 더 크며, 다리에 줄무늬, 몸통에 반점이 있습니다. 설악산을 비롯해 일부 산악지역에 드물게 서식합니다.
+      </p>
+    </div>
+  </div>
+  <div class="plant-row">
+    <div class="plant-img">
+      <img src="img/동식물8.jpg" alt="동식물8">
+    </div>
+    <div class="plant-desc">
+      <h3>족제비</h3>
+      <p>털 색은 계절에 따라 변하는데, 겨울에는 흰털로 덮여 눈 위에서 숨기 좋아 "흰 족제비"라고도 불립니다. 주로 설치류를 주식으로 하며, 양서류, 곤충, 새도 잡아먹는 육식성 동물입니다. 
+        족제비는 민첩하고 날렵하며 나무 타기와 수영에도 능합니다. 설악산을 포함한 몇몇 국립공원에 극소수 서식하며 멸종위기 야생생물 1급으로 보호받고 있습니다.
+      </p>
+    </div>
+  </div>
+  <div class="plant-row">
+    <div class="plant-img">
+      <img src="img/동식물9.jpg" alt="동식물9">
+    </div>
+    <div class="plant-desc">
+      <h3>수리부엉이</h3>
+      <p>깊은 숲과 바위산, 절벽 등 접근성이 낮은 곳에서 둥지를 틀며 야행성으로 밤에 사냥을 합니다. 먹이는 꿩, 토끼, 다람쥐, 쥐, 곤충, 양서류, 파충류 등 다양하며, 
+        거의 무소음으로 날아먹이를 사냥하는 능력을 가졌습니다. 수리부엉이는 천연기념물 제324호이자 멸종위기 야생생물 2급으로 지정되어 보호받고 있습니다. 
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <span>ⓒ 2025 설악산 국립공원 탐방 안내 웹페이지 | 정보 및 사진 자료 출처: 국립공원관리공단 공식 홈페이지</span>
+    <br>
+  </div>
+</footer>
+
+</body>
+</html>

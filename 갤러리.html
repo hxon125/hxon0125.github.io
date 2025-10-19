@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <style>
+        html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+        .navbar {
+    background: #08401c;
+    display: flex;
+    align-items: center;
+    height: 90px;  /* 기존 90px에서 150px으로 증가 */
+    /* 나머지 스타일 그대로 유지 */
+    padding: 0 20px;
+}
+
+.logo {
+    width: 160px;  /* 실제 로고 크기에 맞게 조정 */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-top: 10px;
+    background: none;
+    border-radius: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu-item {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+.menu-item:hover {
+    color: #b5ffad;
+}
+.menu-item.active {
+    color: #b5ffad;  /* 활성 메뉴 색상 */
+}
+.site-footer {
+  width: 100%;
+  background:gray;
+  color: #fff;
+  text-align: center;
+  padding: 22px 0 18px 0;
+  font-size: 1.04rem;
+  margin-top: 48px;
+  letter-spacing: 0.2px;
+}
+
+.site-footer a {
+  color: #b5ffad;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <a href="index.html">
+        <img src="img/설악산 로고.png" width="100" alt="설악산 로고"></a>
+    </div>
+    <nav class="menu">
+        <a href="갤러리.html" class="menu-item active">갤러리</a>
+        <a href="탐방로.html" class="menu-item">탐방로</a>
+        <a href="동식물.html" class="menu-item">동식물</a>
+        <a href="프로그램.html" class="menu-item">프로그램</a>
+        <a href="캠핑.html" class="menu-item">캠핑</a>
+    </nav>
+</header>
+<img src="img/갤러리 레이아웃.png" width="1690">
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <span>ⓒ 2025 설악산 국립공원 탐방 안내 웹페이지 | 정보 및 사진 자료 출처: 국립공원관리공단 공식 홈페이지</span>
+    <br>
+  </div>
+</footer>
+</body>
+</html>

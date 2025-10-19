@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <style>
+        html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+        .navbar {
+    background: #08401c;
+    display: flex;
+    align-items: center;
+    height: 90px;  /* 기존 90px에서 150px으로 증가 */
+    /* 나머지 스타일 그대로 유지 */
+    padding: 0 20px;
+}
+
+.logo {
+    width: 160px;  /* 실제 로고 크기에 맞게 조정 */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-top: 10px;
+    background: none;
+    border-radius: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu-item {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+.menu-item:hover {
+    color: #b5ffad;
+}
+.menu-item.active {
+    color: #b5ffad;  /* 활성 메뉴 색상 */
+}
+.info-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin: 40px auto;
+    max-width: 1500px;
+}
+
+.info-map img {
+    width: 900px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.info-desc {
+    flex: 1; /* 설명글영역이 넓게 */
+    font-size: 1.13rem;
+    color: #222;
+    line-height: 1.7;
+    /* 필요시 padding: 18px; */
+}
+li{
+            list-style-type:circle;
+            font-size: 16px;
+        }
+        span {font-weight: bold;
+        }
+            #music{color:brown;
+    font-weight: bold;
+            }
+.site-footer {
+  width: 100%;
+  background: gray;
+  color: #fff;
+  text-align: center;
+  padding: 22px 0 18px 0;
+  font-size: 1.04rem;
+  margin-top: 48px;
+  letter-spacing: 0.2px;
+}
+
+.site-footer a {
+  color: #b5ffad;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <a href="index.html">
+        <img src="img/설악산 로고.png" width="100" alt="설악산 로고"></a>
+    </div>
+    <nav class="menu">
+        <a href="갤러리.html" class="menu-item">갤러리</a>
+        <a href="탐방로.html" class="menu-item active">탐방로</a>
+        <a href="동식물.html" class="menu-item">동식물</a>
+        <a href="프로그램.html" class="menu-item">프로그램</a>
+        <a href="캠핑.html" class="menu-item">캠핑</a>
+    </nav>
+</header>
+<div class="info-section">
+    <div class="info-map">
+        <img src="img/설악산국립공원탐방로등급지도.jpg" width="11s00" alt="탐방안내도">
+    </div>
+    <div class="info-desc">
+        <h2>인기 탐방코스</h2>
+        <p>
+            <ul>
+            <li><span>용소폭포코스</span><br>소요시간: 1시간, 거리: 3.2km, 난이도: 하</li>
+            <li><span>비룡폭포(토왕폭전망대)</span><br>소요시간: 1시간 30분, 거리: 2.8km, 난이도: 하</li>
+            <li><span>남교리코스</span><br>소요시간: 6시간 30분, 거리: 11.3km, 난이도: 중</li>
+            <li><span>대청봉코스(백담)</span><br>소요시간: 20시간 50분, 거리: 23.9km, 난이도: 상</li>
+            <li><span>대청봉코스(설악동)</span><br>소요시간: 10시간 40분, 거리: 16km, 난이도: 상</li>
+            </ul>
+            <br><br><h3>탐방할 때 듣기 좋은 곡</h3>
+            <p><span id='music'>Top Of The World-Carpenters</span></p>
+            <audio src="Top Of The World.mp3" controls autoplay loop></audio><br><br>
+        </p>
+    </div>
+    <br>
+  </div>
+</footer>
+<footer class="site-footer">
+  <div class="footer-content">
+    <span>ⓒ 2025 설악산 국립공원 탐방 안내 웹페이지 | 정보 및 사진 자료 출처: 국립공원관리공단 공식 홈페이지</span>
+</body>
+</html>
